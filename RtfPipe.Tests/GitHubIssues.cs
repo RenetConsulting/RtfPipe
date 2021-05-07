@@ -131,7 +131,7 @@ f9a62f2ee765661012ae583c4da47b7193b0e8f4c595c2620ce212b58b67f0ce5cdc2321396b719d
     [TestMethod]
     public void Issue23()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue23");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue23");
     }
 
     [TestMethod]
@@ -197,25 +197,25 @@ AC Reference: 12312443423\par \par \par
     [TestMethod]
     public void Issue33()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue33");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue33");
     }
 
     [TestMethod]
     public void Issue34()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue34");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue34");
     }
 
     [TestMethod]
     public void Issue35()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue35");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue35");
     }
 
     [TestMethod]
     public void Issue37()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue37");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue37");
     }
 
     [TestMethod]
@@ -228,26 +228,26 @@ AC Reference: 12312443423\par \par \par
     [TestMethod]
     public void Issue39()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue39");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue39");
     }
 
     [TestMethod]
     public void Issue42()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue42");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue42");
     }
 
     [TestMethod]
     public void Issue46()
     {
       // Need to figure out how to handle shapes and paragraph numbering
-      TestConvert("RtfPipe.Tests.Files.Issue46");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue46");
     }
 
     [TestMethod]
     public void Issue48()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue48");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue48");
     }
 
     // Invalid RTF. Shouldn't have an exception, but need to decide what to do here.
@@ -262,31 +262,31 @@ AC Reference: 12312443423\par \par \par
     public void Issue50_1()
     {
       // Need to fix line height and table layout issues
-      TestConvert("RtfPipe.Tests.Files.Issue50-1");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue50-1");
     }
 
     [TestMethod]
     public void Issue50_2()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue50-2");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue50-2");
     }
 
     [TestMethod]
     public void Issue51()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue51");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue51");
     }
 
     [TestMethod]
     public void Issue52()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue52");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue52");
     }
 
     [TestMethod]
     public void Issue53()
     {
-      TestConvert("RtfPipe.Tests.Files.Issue53");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Issue53");
     }
 
     [TestMethod]

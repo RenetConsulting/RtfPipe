@@ -9,6 +9,10 @@ namespace RtfPipe
   /// </summary>
   internal static class TextEncoding
   {
+    static TextEncoding()
+    {
+      Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+    }
     public static int GetCodePage(int charSet)
     {
       switch (charSet)
@@ -271,7 +275,7 @@ namespace RtfPipe
       }
     }
 
-    public static Encoding RtfDefault { get; } = Encoding.GetEncoding("Windows-1252");
+    public static Encoding RtfDefault { get; } = CodePagesEncodingProvider.Instance.GetEncoding("Windows-1252");
   }
 
 }

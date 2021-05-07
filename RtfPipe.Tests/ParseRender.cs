@@ -16,263 +16,263 @@ namespace RtfPipe.Tests
     [TestMethod]
     public void BulletList()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.bullet_list");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.bullet_list");
     }
 
     [TestMethod]
     public void CapsMixed()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.caps_mixed");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.caps_mixed");
     }
 
     [TestMethod]
     public void CharStyle()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.char_style");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.char_style");
     }
 
     [TestMethod]
     public void CharUpperRanges()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.char_upper_ranges");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.char_upper_ranges");
     }
 
     [TestMethod]
     public void ChessTournament()
     {
-      TestConvert("RtfPipe.Tests.Files.phprtflite.chess_tournament");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.phprtflite.chess_tournament");
     }
 
     [TestMethod]
     public void Color()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.color");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.color");
     }
 
     [TestMethod]
     public void DiffTypesBorder()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.diff_types_border");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.diff_types_border");
     }
 
     [TestMethod]
     public void EscapedText()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.escaped_text");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.escaped_text");
     }
 
     [TestMethod]
     public void HeadersFooters()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.headers_footers", true);
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.headers_footers", true);
     }
 
     [TestMethod]
     public void HeadingWithSection()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.heading_with_section");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.heading_with_section");
     }
 
     [TestMethod]
     public void HeadingsMixed()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.headings_mixed");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.headings_mixed");
     }
 
     [TestMethod]
     public void Hyperlink()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.Hyperlink");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.Hyperlink");
     }
 
     [TestMethod]
     public void InlineMix()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.inline_mix");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.inline_mix");
     }
 
     [TestMethod]
     public void InlineOverPara()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.inline_over_para");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.inline_over_para");
     }
 
     [TestMethod]
     public void ItalicsPlain()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.italics_plain");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.italics_plain");
     }
 
     [TestMethod]
     public void Japanese()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.japanese");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.japanese");
     }
 
     [TestMethod]
     public void ListInTable()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.list_in_table");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.list_in_table");
     }
 
     [TestMethod]
     public void ListWithIndentedItems()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.list_with_indented_items");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.list_with_indented_items");
     }
 
     [TestMethod]
     public void ListsWithBreaks()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.lists_with_breaks");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.lists_with_breaks");
     }
 
     [TestMethod]
     public void Minimal()
     {
-      TestConvert("RtfPipe.Tests.Files.minimal");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.minimal");
     }
 
     [TestMethod]
     public void NestedListsIndents()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.nested_lists_indents");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.nested_lists_indents");
     }
 
     [TestMethod]
     public void NestedListsIndentsWord()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.nested_lists_indents_word");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.nested_lists_indents_word");
     }
 
     [TestMethod]
     public void NestedTableReport()
     {
-      TestConvert("RtfPipe.Tests.Files.nested_table_report");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.nested_table_report");
     }
 
     [TestMethod]
     public void NestedTables()
     {
-      TestConvert("RtfPipe.Tests.Files.phprtflite.nested_tables");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.phprtflite.nested_tables");
     }
 
     [TestMethod]
     public void OsXTextEditFacesMixed()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.os_x_text_edit_faces_mixed");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.os_x_text_edit_faces_mixed");
     }
 
     [TestMethod]
     public void OpenOfficeHelloWorld()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.open_office_hello_world");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.open_office_hello_world");
     }
 
     [TestMethod]
     public void OpenOfficeSpecialChar()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.open_office_special_char");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.open_office_special_char");
     }
 
     [TestMethod]
     public void OsXTextEditItalicsMixed()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.os_x_text_edit_italics_mixed");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.os_x_text_edit_italics_mixed");
     }
 
     [TestMethod]
     public void OutlineList()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.outline_list");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.outline_list");
     }
 
     [TestMethod]
     public void ParagraphsFonts()
     {
       Parser.Clock = () => new DateTime(2018, 7, 1);
-      TestConvert("RtfPipe.Tests.Files.phprtflite.paragraphs_fonts");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.phprtflite.paragraphs_fonts");
     }
 
     [TestMethod]
     public void ParagraphsInTables()
     {
       Parser.Clock = () => new DateTime(2018, 7, 1);
-      TestConvert("RtfPipe.Tests.Files.phprtflite.paragraphs_in_tables");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.phprtflite.paragraphs_in_tables");
     }
 
     [TestMethod]
     public void RtfParserTest0()
     {
-      TestConvert("RtfPipe.Tests.Files.RtfParserTest_0");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.RtfParserTest_0");
     }
 
     [TestMethod]
     public void RtfParserTest1()
     {
-      TestConvert("RtfPipe.Tests.Files.RtfParserTest_1");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.RtfParserTest_1");
     }
 
     [TestMethod]
     public void RtfParserTest2()
     {
-      TestConvert("RtfPipe.Tests.Files.RtfParserTest_2");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.RtfParserTest_2");
     }
 
     [TestMethod]
     public void RtfParserTest3()
     {
-      TestConvert("RtfPipe.Tests.Files.RtfParserTest_3");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.RtfParserTest_3");
     }
 
     [TestMethod]
     public void Simplest()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.simplest");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.simplest");
     }
 
     [TestMethod]
     public void TableDifferentCellWidths()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.table_different_cell_widths");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.table_different_cell_widths");
     }
 
     [TestMethod]
     public void TableEmptyRow()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.table_empty_row");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.table_empty_row");
     }
 
     [TestMethod]
     public void Tables()
     {
       Parser.Clock = () => new DateTime(2018, 7, 1);
-      TestConvert("RtfPipe.Tests.Files.phprtflite.tables");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.phprtflite.tables");
     }
 
     [TestMethod]
     public void TableSimple()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.table_simple");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.table_simple");
     }
 
     [TestMethod]
     public void TableWithHeader()
     {
-      TestConvert("RtfPipe.Tests.Files.rtf2xml.table_with_header");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.table_with_header");
     }
 
     [TestMethod]
     public void Test01()
     {
-      TestConvert("RtfPipe.Tests.Files.Test01");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Test01");
     }
 
     [TestMethod]
     public void Utf8()
     {
       Parser.Clock = () => new DateTime(2018, 7, 1);
-      TestConvert("RtfPipe.Tests.Files.phprtflite.utf8");
+      TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.phprtflite.utf8");
     }
 
     private void TestParse(string path)
@@ -306,13 +306,13 @@ namespace RtfPipe.Tests
       var expected = default(string);
       var actual = default(string);
 
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("RtfPipe.Tests.Files.Test01.rtf"))
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Test01.rtf"))
       using (var reader = new StreamReader(stream))
       {
         expected = reader.ReadToEnd();
       }
 
-      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("RtfPipe.Tests.Files.Test01.rtf"))
+      using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(Assembly.GetExecutingAssembly().GetName().Name + ".Files.Test01.rtf"))
       using (var reader = new RtfStreamReader(stream))
       {
         actual = reader.ReadToEnd();
@@ -455,7 +455,7 @@ ffc001ffffffffffffc001ffffffffffffc001ffffffffffffc001040000002701ffff03000000
     public static void AssertEqual(string expected, string actual)
     {
       if (expected != actual)
-        File.WriteAllText($@"C:\Users\erdomke\source\GitHub\RtfPipe\RtfPipe.Tests\Fail_{DateTime.Now:yyyyMMddHHmmss}_{Guid.NewGuid().ToString("N")}.html", expected + "\r\n\r\n<br><br><br>\r\n\r\n" + actual);
+        File.WriteAllText($@".\Fail_{DateTime.Now:yyyyMMddHHmmss}_{Guid.NewGuid().ToString("N")}.html", expected + "\r\n\r\n<br><br><br>\r\n\r\n" + actual);
       Assert.AreEqual(expected, actual);
     }
   }

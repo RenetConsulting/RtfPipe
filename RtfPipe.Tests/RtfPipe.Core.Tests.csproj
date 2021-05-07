@@ -1,0 +1,427 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+	<GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+	<GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+	<GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <ApplicationIcon />
+    <OutputTypeEx>library</OutputTypeEx>
+    <Configurations>Debug;Release;TestingProduction</Configurations>
+    <IsTestProject>true</IsTestProject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>RtfPipeStrongNameKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ExcludeFromStyleCop Include="$(IntermediateOutputPath)\**\*.cs">
+      <Visible>False</Visible>
+    </ExcludeFromStyleCop>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Coverage\**" />
+    <EmbeddedResource Remove="Coverage\**" />
+    <None Remove="Coverage\**" />
+    <None Remove="Coverage.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Files\AbsolutePositioning.rtf" />
+    <None Remove="Files\Headings.rtf" />
+    <None Remove="Files\Hyperlink.rtf" />
+    <None Remove="Files\Issue23.html" />
+    <None Remove="Files\Issue23.rtf" />
+    <None Remove="Files\Issue33.html" />
+    <None Remove="Files\Issue33.rtf" />
+    <None Remove="Files\Issue34.html" />
+    <None Remove="Files\Issue34.rtf" />
+    <None Remove="Files\Issue35.html" />
+    <None Remove="Files\Issue35.rtf" />
+    <None Remove="Files\Issue37.html" />
+    <None Remove="Files\Issue37.rtf" />
+    <None Remove="Files\Issue39.html" />
+    <None Remove="Files\Issue39.rtf" />
+    <None Remove="Files\Issue42.html" />
+    <None Remove="Files\Issue42.rtf" />
+    <None Remove="Files\Issue46.html" />
+    <None Remove="Files\Issue46.rtf" />
+    <None Remove="Files\Issue48.html" />
+    <None Remove="Files\Issue48.rtf" />
+    <None Remove="Files\Issue49.rtf" />
+    <None Remove="Files\Issue50-1.html" />
+    <None Remove="Files\Issue50-1.rtf" />
+    <None Remove="Files\Issue50-2.html" />
+    <None Remove="Files\Issue50-2.rtf" />
+    <None Remove="Files\Issue51.html" />
+    <None Remove="Files\Issue51.rtf" />
+    <None Remove="Files\Issue52.html" />
+    <None Remove="Files\Issue52.rtf" />
+    <None Remove="Files\Issue53.html" />
+    <None Remove="Files\Issue53.rtf" />
+    <None Remove="Files\List.rtf" />
+    <None Remove="Files\ListGoogle.rtf" />
+    <None Remove="Files\ListWord.rtf" />
+    <None Remove="Files\merged_cells.rtf" />
+    <None Remove="Files\minimal.html" />
+    <None Remove="Files\minimal.rtf" />
+    <None Remove="Files\nested_table_report.html" />
+    <None Remove="Files\nested_table_report.rtf" />
+    <None Remove="Files\phprtflite\chess_tournament.html" />
+    <None Remove="Files\phprtflite\chess_tournament.rtf" />
+    <None Remove="Files\phprtflite\document_sections.rtf" />
+    <None Remove="Files\phprtflite\footnotes.rtf" />
+    <None Remove="Files\phprtflite\formfields.rtf" />
+    <None Remove="Files\phprtflite\hello_world.rtf" />
+    <None Remove="Files\phprtflite\images.html" />
+    <None Remove="Files\phprtflite\images.rtf" />
+    <None Remove="Files\phprtflite\image_from_strings.html" />
+    <None Remove="Files\phprtflite\image_from_strings.rtf" />
+    <None Remove="Files\phprtflite\lists.rtf" />
+    <None Remove="Files\phprtflite\merged_cells.html" />
+    <None Remove="Files\phprtflite\merged_cells.rtf" />
+    <None Remove="Files\phprtflite\nested_tables.html" />
+    <None Remove="Files\phprtflite\nested_tables.rtf" />
+    <None Remove="Files\phprtflite\paragraphs_fonts.html" />
+    <None Remove="Files\phprtflite\paragraphs_fonts.rtf" />
+    <None Remove="Files\phprtflite\paragraphs_in_tables.html" />
+    <None Remove="Files\phprtflite\paragraphs_in_tables.rtf" />
+    <None Remove="Files\phprtflite\tables.html" />
+    <None Remove="Files\phprtflite\tables.rtf" />
+    <None Remove="Files\phprtflite\table_in_header.rtf" />
+    <None Remove="Files\phprtflite\utf8.html" />
+    <None Remove="Files\phprtflite\utf8.rtf" />
+    <None Remove="Files\PictureObjectEmbed.rtf" />
+    <None Remove="Files\PictureObjectEmbed2.rtf" />
+    <None Remove="Files\rtf2xml\bullet_list.html" />
+    <None Remove="Files\rtf2xml\bullet_list.rtf" />
+    <None Remove="Files\rtf2xml\caps_mixed.html" />
+    <None Remove="Files\rtf2xml\caps_mixed.rtf" />
+    <None Remove="Files\rtf2xml\char_style.html" />
+    <None Remove="Files\rtf2xml\char_style.rtf" />
+    <None Remove="Files\rtf2xml\char_upper_ranges.html" />
+    <None Remove="Files\rtf2xml\char_upper_ranges.rtf" />
+    <None Remove="Files\rtf2xml\char_upper_ranges_hex.html" />
+    <None Remove="Files\rtf2xml\char_upper_ranges_hex.rtf" />
+    <None Remove="Files\rtf2xml\color.html" />
+    <None Remove="Files\rtf2xml\color.rtf" />
+    <None Remove="Files\rtf2xml\complex_list_bullet.rtf" />
+    <None Remove="Files\rtf2xml\complex_list_diff_styles.rtf" />
+    <None Remove="Files\rtf2xml\diff_types_border.html" />
+    <None Remove="Files\rtf2xml\diff_types_border.rtf" />
+    <None Remove="Files\rtf2xml\escaped_text.html" />
+    <None Remove="Files\rtf2xml\escaped_text.rtf" />
+    <None Remove="Files\rtf2xml\fields_simple_format_switch.rtf" />
+    <None Remove="Files\rtf2xml\headers_footers.html" />
+    <None Remove="Files\rtf2xml\headers_footers.rtf" />
+    <None Remove="Files\rtf2xml\headings_mixed.html" />
+    <None Remove="Files\rtf2xml\headings_mixed.rtf" />
+    <None Remove="Files\rtf2xml\heading_with_section.html" />
+    <None Remove="Files\rtf2xml\heading_with_section.rtf" />
+    <None Remove="Files\rtf2xml\Hyperlink.html" />
+    <None Remove="Files\rtf2xml\Hyperlink.rtf" />
+    <None Remove="Files\rtf2xml\inline_mix.html" />
+    <None Remove="Files\rtf2xml\inline_mix.rtf" />
+    <None Remove="Files\rtf2xml\inline_over_para.html" />
+    <None Remove="Files\rtf2xml\inline_over_para.rtf" />
+    <None Remove="Files\rtf2xml\italics_plain.html" />
+    <None Remove="Files\rtf2xml\italics_plain.rtf" />
+    <None Remove="Files\rtf2xml\japanese.html" />
+    <None Remove="Files\rtf2xml\japanese.rtf" />
+    <None Remove="Files\rtf2xml\lists_with_breaks.html" />
+    <None Remove="Files\rtf2xml\lists_with_breaks.rtf" />
+    <None Remove="Files\rtf2xml\list_in_table.html" />
+    <None Remove="Files\rtf2xml\list_in_table.rtf" />
+    <None Remove="Files\rtf2xml\list_with_indented_items.html" />
+    <None Remove="Files\rtf2xml\list_with_indented_items.rtf" />
+    <None Remove="Files\rtf2xml\named_styles.rtf" />
+    <None Remove="Files\rtf2xml\nested_lists_indents.html" />
+    <None Remove="Files\rtf2xml\nested_lists_indents.rtf" />
+    <None Remove="Files\rtf2xml\nested_lists_indents_word.html" />
+    <None Remove="Files\rtf2xml\nested_lists_indents_word.rtf" />
+    <None Remove="Files\rtf2xml\noteref.rtf" />
+    <None Remove="Files\rtf2xml\old1_from_web.rtf" />
+    <None Remove="Files\rtf2xml\old2_from_web.rtf" />
+    <None Remove="Files\rtf2xml\old3_from_web.rtf" />
+    <None Remove="Files\rtf2xml\open_office_hello_world.html" />
+    <None Remove="Files\rtf2xml\open_office_hello_world.rtf" />
+    <None Remove="Files\rtf2xml\open_office_special_char.html" />
+    <None Remove="Files\rtf2xml\open_office_special_char.rtf" />
+    <None Remove="Files\rtf2xml\os_x_text_edit_faces_mixed.html" />
+    <None Remove="Files\rtf2xml\os_x_text_edit_faces_mixed.rtf" />
+    <None Remove="Files\rtf2xml\os_x_text_edit_italics_mixed.html" />
+    <None Remove="Files\rtf2xml\os_x_text_edit_italics_mixed.rtf" />
+    <None Remove="Files\rtf2xml\outline_list.html" />
+    <None Remove="Files\rtf2xml\outline_list.rtf" />
+    <None Remove="Files\rtf2xml\page_ref.rtf" />
+    <None Remove="Files\rtf2xml\sections_next_page.rtf" />
+    <None Remove="Files\rtf2xml\sections_with_named_styles.rtf" />
+    <None Remove="Files\rtf2xml\simplest.html" />
+    <None Remove="Files\rtf2xml\simplest.rtf" />
+    <None Remove="Files\rtf2xml\simple_number.rtf" />
+    <None Remove="Files\rtf2xml\simple_page_break1.rtf" />
+    <None Remove="Files\rtf2xml\simple_page_break2.rtf" />
+    <None Remove="Files\rtf2xml\symbol.rtf" />
+    <None Remove="Files\rtf2xml\tables_from_web1.rtf" />
+    <None Remove="Files\rtf2xml\table_different_cell_widths.html" />
+    <None Remove="Files\rtf2xml\table_different_cell_widths.rtf" />
+    <None Remove="Files\rtf2xml\table_empty_row.html" />
+    <None Remove="Files\rtf2xml\table_empty_row.rtf" />
+    <None Remove="Files\rtf2xml\table_of_authorities.rtf" />
+    <None Remove="Files\rtf2xml\table_simple.html" />
+    <None Remove="Files\rtf2xml\table_simple.rtf" />
+    <None Remove="Files\rtf2xml\table_simple2.rtf" />
+    <None Remove="Files\rtf2xml\table_simple3.rtf" />
+    <None Remove="Files\rtf2xml\table_with_header.html" />
+    <None Remove="Files\rtf2xml\table_with_header.rtf" />
+    <None Remove="Files\rtf2xml\tabs.rtf" />
+    <None Remove="Files\rtf2xml\ted_hello_world.rtf" />
+    <None Remove="Files\rtf2xml\ted_mixed_faces.rtf" />
+    <None Remove="Files\rtf2xml\toc.rtf" />
+    <None Remove="Files\rtf2xml\zapf_dingbats.rtf" />
+    <None Remove="Files\RtfParserTest_0.html" />
+    <None Remove="Files\RtfParserTest_0.rtf" />
+    <None Remove="Files\RtfParserTest_1.html" />
+    <None Remove="Files\RtfParserTest_1.rtf" />
+    <None Remove="Files\RtfParserTest_2.html" />
+    <None Remove="Files\RtfParserTest_2.rtf" />
+    <None Remove="Files\RtfParserTest_3.html" />
+    <None Remove="Files\RtfParserTest_3.rtf" />
+    <None Remove="Files\RtfParserTest_4.html" />
+    <None Remove="Files\RtfParserTest_4.rtf" />
+    <None Remove="Files\RtfParserTest_5.rtf" />
+    <None Remove="Files\RtfParserTest_6.rtf" />
+    <None Remove="Files\RtfParserTest_7.rtf" />
+    <None Remove="Files\RtfParserTest_8.rtf" />
+    <None Remove="Files\RtfParserTest_fail_0.rtf" />
+    <None Remove="Files\RtfParserTest_fail_1.rtf" />
+    <None Remove="Files\RtfParserTest_fail_2.rtf" />
+    <None Remove="Files\RtfParserTest_fail_3.rtf" />
+    <None Remove="Files\RtfParserTest_fail_4.rtf" />
+    <None Remove="Files\RtfParserTest_fail_5.rtf" />
+    <None Remove="Files\RtfParserTest_fail_6.rtf" />
+    <None Remove="Files\sample2.rtf" />
+    <None Remove="Files\sample3.rtf" />
+    <None Remove="Files\scratch.html" />
+    <None Remove="Files\scratch.rtf" />
+    <None Remove="Files\spacing.rtf" />
+    <None Remove="Files\Star.bmp" />
+    <None Remove="Files\tabs.rtf" />
+    <None Remove="Files\test.wmf" />
+    <None Remove="Files\Test01.html" />
+    <None Remove="Files\Test01.rtf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Files\AbsolutePositioning.rtf" />
+    <EmbeddedResource Include="Files\Headings.rtf" />
+    <EmbeddedResource Include="Files\Hyperlink.rtf" />
+    <EmbeddedResource Include="Files\Issue23.html" />
+    <EmbeddedResource Include="Files\Issue23.rtf" />
+    <EmbeddedResource Include="Files\Issue33.html" />
+    <EmbeddedResource Include="Files\Issue33.rtf" />
+    <EmbeddedResource Include="Files\Issue34.html" />
+    <EmbeddedResource Include="Files\Issue34.rtf" />
+    <EmbeddedResource Include="Files\Issue35.html" />
+    <EmbeddedResource Include="Files\Issue35.rtf" />
+    <EmbeddedResource Include="Files\Issue37.html" />
+    <EmbeddedResource Include="Files\Issue37.rtf" />
+    <EmbeddedResource Include="Files\Issue39.html" />
+    <EmbeddedResource Include="Files\Issue39.rtf" />
+    <EmbeddedResource Include="Files\Issue42.html" />
+    <EmbeddedResource Include="Files\Issue42.rtf" />
+    <EmbeddedResource Include="Files\Issue46.html" />
+    <EmbeddedResource Include="Files\Issue46.rtf" />
+    <EmbeddedResource Include="Files\Issue48.html" />
+    <EmbeddedResource Include="Files\Issue48.rtf" />
+    <EmbeddedResource Include="Files\Issue49.rtf" />
+    <EmbeddedResource Include="Files\Issue50-1.html" />
+    <EmbeddedResource Include="Files\Issue50-1.rtf" />
+    <EmbeddedResource Include="Files\Issue50-2.html" />
+    <EmbeddedResource Include="Files\Issue50-2.rtf" />
+    <EmbeddedResource Include="Files\Issue51.html" />
+    <EmbeddedResource Include="Files\Issue51.rtf" />
+    <EmbeddedResource Include="Files\Issue52.html" />
+    <EmbeddedResource Include="Files\Issue52.rtf" />
+    <EmbeddedResource Include="Files\Issue53.html" />
+    <EmbeddedResource Include="Files\Issue53.rtf" />
+    <EmbeddedResource Include="Files\List.rtf" />
+    <EmbeddedResource Include="Files\ListGoogle.rtf" />
+    <EmbeddedResource Include="Files\ListWord.rtf" />
+    <EmbeddedResource Include="Files\merged_cells.rtf" />
+    <EmbeddedResource Include="Files\minimal.html" />
+    <EmbeddedResource Include="Files\minimal.rtf" />
+    <EmbeddedResource Include="Files\nested_table_report.html" />
+    <EmbeddedResource Include="Files\nested_table_report.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\chess_tournament.html" />
+    <EmbeddedResource Include="Files\phprtflite\chess_tournament.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\document_sections.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\footnotes.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\formfields.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\hello_world.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\images.html" />
+    <EmbeddedResource Include="Files\phprtflite\images.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\image_from_strings.html" />
+    <EmbeddedResource Include="Files\phprtflite\image_from_strings.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\lists.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\merged_cells.html" />
+    <EmbeddedResource Include="Files\phprtflite\merged_cells.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\nested_tables.html" />
+    <EmbeddedResource Include="Files\phprtflite\nested_tables.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\paragraphs_fonts.html" />
+    <EmbeddedResource Include="Files\phprtflite\paragraphs_fonts.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\paragraphs_in_tables.html" />
+    <EmbeddedResource Include="Files\phprtflite\paragraphs_in_tables.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\tables.html" />
+    <EmbeddedResource Include="Files\phprtflite\tables.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\table_in_header.rtf" />
+    <EmbeddedResource Include="Files\phprtflite\utf8.html" />
+    <EmbeddedResource Include="Files\phprtflite\utf8.rtf" />
+    <EmbeddedResource Include="Files\PictureObjectEmbed.rtf" />
+    <EmbeddedResource Include="Files\PictureObjectEmbed2.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\bullet_list.html" />
+    <EmbeddedResource Include="Files\rtf2xml\bullet_list.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\caps_mixed.html" />
+    <EmbeddedResource Include="Files\rtf2xml\caps_mixed.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\char_style.html" />
+    <EmbeddedResource Include="Files\rtf2xml\char_style.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\char_upper_ranges.html" />
+    <EmbeddedResource Include="Files\rtf2xml\char_upper_ranges.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\char_upper_ranges_hex.html" />
+    <EmbeddedResource Include="Files\rtf2xml\char_upper_ranges_hex.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\color.html" />
+    <EmbeddedResource Include="Files\rtf2xml\color.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\complex_list_bullet.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\complex_list_diff_styles.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\diff_types_border.html" />
+    <EmbeddedResource Include="Files\rtf2xml\diff_types_border.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\escaped_text.html" />
+    <EmbeddedResource Include="Files\rtf2xml\escaped_text.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\fields_simple_format_switch.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\headers_footers.html" />
+    <EmbeddedResource Include="Files\rtf2xml\headers_footers.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\headings_mixed.html" />
+    <EmbeddedResource Include="Files\rtf2xml\headings_mixed.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\heading_with_section.html" />
+    <EmbeddedResource Include="Files\rtf2xml\heading_with_section.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\Hyperlink.html" />
+    <EmbeddedResource Include="Files\rtf2xml\Hyperlink.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\inline_mix.html" />
+    <EmbeddedResource Include="Files\rtf2xml\inline_mix.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\inline_over_para.html" />
+    <EmbeddedResource Include="Files\rtf2xml\inline_over_para.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\italics_plain.html" />
+    <EmbeddedResource Include="Files\rtf2xml\italics_plain.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\japanese.html" />
+    <EmbeddedResource Include="Files\rtf2xml\japanese.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\lists_with_breaks.html" />
+    <EmbeddedResource Include="Files\rtf2xml\lists_with_breaks.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\list_in_table.html" />
+    <EmbeddedResource Include="Files\rtf2xml\list_in_table.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\list_with_indented_items.html" />
+    <EmbeddedResource Include="Files\rtf2xml\list_with_indented_items.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\named_styles.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\nested_lists_indents.html" />
+    <EmbeddedResource Include="Files\rtf2xml\nested_lists_indents.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\nested_lists_indents_word.html" />
+    <EmbeddedResource Include="Files\rtf2xml\nested_lists_indents_word.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\noteref.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\old1_from_web.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\old2_from_web.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\old3_from_web.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\open_office_hello_world.html" />
+    <EmbeddedResource Include="Files\rtf2xml\open_office_hello_world.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\open_office_special_char.html" />
+    <EmbeddedResource Include="Files\rtf2xml\open_office_special_char.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\os_x_text_edit_faces_mixed.html" />
+    <EmbeddedResource Include="Files\rtf2xml\os_x_text_edit_faces_mixed.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\os_x_text_edit_italics_mixed.html" />
+    <EmbeddedResource Include="Files\rtf2xml\os_x_text_edit_italics_mixed.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\outline_list.html" />
+    <EmbeddedResource Include="Files\rtf2xml\outline_list.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\page_ref.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\sections_next_page.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\sections_with_named_styles.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\simplest.html" />
+    <EmbeddedResource Include="Files\rtf2xml\simplest.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\simple_number.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\simple_page_break1.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\simple_page_break2.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\symbol.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\tables_from_web1.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\table_different_cell_widths.html" />
+    <EmbeddedResource Include="Files\rtf2xml\table_different_cell_widths.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\table_empty_row.html" />
+    <EmbeddedResource Include="Files\rtf2xml\table_empty_row.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\table_of_authorities.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\table_simple.html" />
+    <EmbeddedResource Include="Files\rtf2xml\table_simple.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\table_simple2.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\table_simple3.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\table_with_header.html" />
+    <EmbeddedResource Include="Files\rtf2xml\table_with_header.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\tabs.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\ted_hello_world.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\ted_mixed_faces.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\toc.rtf" />
+    <EmbeddedResource Include="Files\rtf2xml\zapf_dingbats.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_0.html" />
+    <EmbeddedResource Include="Files\RtfParserTest_0.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_1.html" />
+    <EmbeddedResource Include="Files\RtfParserTest_1.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_2.html" />
+    <EmbeddedResource Include="Files\RtfParserTest_2.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_3.html" />
+    <EmbeddedResource Include="Files\RtfParserTest_3.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_4.html" />
+    <EmbeddedResource Include="Files\RtfParserTest_4.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_5.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_6.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_7.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_8.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_fail_0.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_fail_1.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_fail_2.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_fail_3.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_fail_4.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_fail_5.rtf" />
+    <EmbeddedResource Include="Files\RtfParserTest_fail_6.rtf" />
+    <EmbeddedResource Include="Files\sample2.rtf" />
+    <EmbeddedResource Include="Files\sample3.rtf" />
+    <EmbeddedResource Include="Files\scratch.html" />
+    <EmbeddedResource Include="Files\scratch.rtf" />
+    <EmbeddedResource Include="Files\spacing.rtf" />
+    <EmbeddedResource Include="Files\Star.bmp" />
+    <EmbeddedResource Include="Files\tabs.rtf" />
+    <EmbeddedResource Include="Files\test.wmf" />
+    <EmbeddedResource Include="Files\Test01.html" />
+    <EmbeddedResource Include="Files\Test01.rtf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RtfPipe\RtfPipe.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+</Project>
