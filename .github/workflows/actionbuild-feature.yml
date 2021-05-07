@@ -1,0 +1,35 @@
+name: RtfPipe - Feature
+
+on:
+  push:
+    branches-ignore:
+      - master
+      - Test
+      - Development
+
+env:
+  DOTNET_VERSION: '3.1.408'           # set this to the dotnet version to use
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v1
+
+    - name: Setup .NET Core ${{ env.DOTNET_VERSION }}
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Build with dotnet
+      run: dotnet build ./RtfPipe.sln --configuration Release
+      
+    - name: Test with dotnet
+      run: dotnet test ./RtfPipe.sln --configuration Release  --no-build
+      
+    - name: Create web publish
+      run: dotnet publish ./UI/Application/Application.csproj --configuration Release --no-build
+
