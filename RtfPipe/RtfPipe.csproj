@@ -39,11 +39,7 @@
     <DefineConstants>$(DefineConstants);TASKS;ASYNC</DefineConstants>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
-	<DefineConstants>$(DefineConstants);NETFULL;TASKS;ASYNC</DefineConstants>
-  </PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net35|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net35|AnyCPU'">
     <DocumentationFile></DocumentationFile>
   </PropertyGroup>
 
