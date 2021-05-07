@@ -190,6 +190,7 @@ namespace RtfPipe.Tests
     [TestMethod]
     public void ParagraphsFonts()
     {
+      System.Globalization.CultureInfo.CurrentCulture = new System.Globalization.CultureInfo("en-US", false);
       Parser.Clock = () => new DateTime(2018, 7, 1);
       TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.phprtflite.paragraphs_fonts");
     }
@@ -197,6 +198,7 @@ namespace RtfPipe.Tests
     [TestMethod]
     public void ParagraphsInTables()
     {
+      System.Globalization.CultureInfo.CurrentCulture = new System.Globalization.CultureInfo("en-US", false);
       Parser.Clock = () => new DateTime(2018, 7, 1);
       TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.phprtflite.paragraphs_in_tables");
     }
@@ -261,6 +263,25 @@ namespace RtfPipe.Tests
     {
       TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.rtf2xml.table_with_header");
     }
+
+    //[TestMethod]
+    //public void WmfToHtml()
+    //{
+    //  TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.images.wmf");
+    //}
+
+    //[TestMethod]
+    //public void BmpToHtml()
+    //{
+    //  TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.images.bmp");
+    //}
+
+    //[TestMethod]
+    //public void EmfToHtml()
+    //{
+    //  TestConvert(Assembly.GetExecutingAssembly().GetName().Name + ".Files.images.emf");
+    //}
+
 
     [TestMethod]
     public void Test01()
