@@ -79,8 +79,10 @@ namespace RtfPipe
         using (var source = new MemoryStream(picture.Bytes))
         using (var dest = new MemoryStream())
         {
-          var bmp = new System.Drawing.Bitmap(source);
-          bmp.Save(dest, System.Drawing.Imaging.ImageFormat.Png);
+          using (var bmp = new System.Drawing.Bitmap(source))
+          {
+            bmp.Save(dest, System.Drawing.Imaging.ImageFormat.Png);
+          }
           return "data:image/png;base64," + Convert.ToBase64String(dest.ToArray());
         }
       }
