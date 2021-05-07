@@ -29,7 +29,4 @@ jobs:
       
     - name: Test with dotnet
       run: dotnet test ./RtfPipe.sln --configuration Release  --no-build
-      
-    - name: Create web publish
-      run: dotnet publish ./UI/Application/Application.csproj --configuration Release --no-build
-
+     
