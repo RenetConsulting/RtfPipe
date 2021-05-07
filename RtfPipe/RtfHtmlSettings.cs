@@ -74,18 +74,18 @@ namespace RtfPipe
 
     private static string DataUri(Picture picture)
     {
+#if NETFULL
       if (picture.Type is EmfBlip || picture.Type is WmMetafile)
       {
         using (var source = new MemoryStream(picture.Bytes))
         using (var dest = new MemoryStream())
         {
-          using (var bmp = new System.Drawing.Bitmap(source))
-          {
-            bmp.Save(dest, System.Drawing.Imaging.ImageFormat.Png);
-          }
+          var bmp = new System.Drawing.Bitmap(source);
+          bmp.Save(dest, System.Drawing.Imaging.ImageFormat.Png);
           return "data:image/png;base64," + Convert.ToBase64String(dest.ToArray());
         }
       }
+#endif
       return "data:" + picture.MimeType() + ";base64," + Convert.ToBase64String(picture.Bytes);
     }
 
